@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Answer</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>Stupid Coach</h1>
+    <p> <%= params[:question]%> <br>
+      - you <br> <br>
+      <%=@answer%> <br>
+      - coach <br> <br>
+    </p>
+
+    <%= link_to "Ask another question", ask_path %>
+
+  </body>
+</html>
